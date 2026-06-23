@@ -3,7 +3,7 @@
   "buildCommand": "pnpm install --no-frozen-lockfile && pnpm --filter @workspace/BetterCapitalInvestment run build && pnpm --filter @workspace/api-server run build",
   "outputDirectory": "artifacts/bettercapitalinvestment/dist/public",
   "framework": null,
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "devCommand": null,
   "regions": ["iad1"],
   "functions": {
