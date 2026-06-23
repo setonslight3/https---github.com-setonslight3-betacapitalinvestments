@@ -35,3 +35,9 @@ function copyDir(src, dest) {
 console.log('Copying build files from', sourceDir, 'to', targetDir);
 copyDir(sourceDir, targetDir);
 console.log('✓ Build files copied successfully');
+
+// Verify the copy
+console.log('\nVerifying public directory contents:');
+const publicContents = fs.readdirSync(targetDir);
+console.log('Files in /vercel/path0/public:', publicContents);
+console.log('Total files:', publicContents.length);
